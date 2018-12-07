@@ -9,22 +9,74 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=El+Messiri|Lobster|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class='d-flex justify-content-between'>
         <div class="logo"></div>
-        <div class="navigation d-flex justify-content-between align-items-center">
+        <nav class="navigation d-flex justify-content-between align-items-center">
             <ul class="main-menu d-flex justify-content-around align-items-center ">
-                <li class="navList"><a href="#" class="navItem">Home</a></li>
-                <li class="navList"><a href="#" class="navItem">About</a></li>
-                <li class="navList"><a href="#" class="navItem">Resume</a></li>
-                <li class="navList"><a href="#" class="navItem">Blog</a></li>
-                <li class="navList"><a href="#" class="navItem">Contact</a></li>
+                <li><a href="#" class="navItem">Home</a></li>
+                <li><a href="#" class="navItem">About</a></li>
+                <li><a href="#" class="navItem">Resume</a></li>
+                <li><a href="#" class="navItem">Blog</a></li>
+                <li><a href="#" class="navItem">Contact Me</a></li>
             </ul>
-        </div>  
+        </nav> 
+            <button class="hamburger-button" id="open-button">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+            <div class="mobile-menu">
+               <div class='mobile-container' id='mobile-container'>
+                    <ul>
+                        <button id="close"><i class="fas fa-times fa-lg"></i></button>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        
     </header>
-    <div class="hero"></div>
-    <div class="main"></div>
-    
+    <script src="./javscript/mobilemenu.js"></script>
+<!-- **********Hero Section********* -->
+    <div class="hero">
+        <div class="hero-content d-flex flex-column align-items-center justify-content-center">
+            <h1>Jasdeep Sidhu</h1>
+            <h2>Web Developer</h2>
+        </div>
+    </div>
+<!--*********** About Section************* -->
+    <div class="about d-flex align-items-center justify-content-around">
+        <div class="about-me">
+            <div class="about-inner"></div>
+        </div>
+        <div class="profile-pic">
+                <!-- <div class="profile-pic-inner"></div> -->
+            <img src="./images/hello-i-m-nik-743251-unsplash.jpg" alt="profilepic">
+        </div>
+    </div>
+<!--*********** Work Section************* -->
+    <div class="work">
+        <div class="work-inner"></div>
+    </div>
+    <div class="work-cards d-flex justify-content-center">
+        <div class="work1"></div>
+        <div class="work2"></div>
+        <div class="work3"></div>
+        <div class="work4"></div>
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
