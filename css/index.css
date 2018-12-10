@@ -2,18 +2,18 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   margin: 0;
   padding: 0%;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+body {
+  background: wheat;
 }
 
 header {
@@ -34,12 +34,12 @@ header .main-menu {
   font-size: 20px;
 }
 header .navItem {
-  color: #017338;
+  color: #F220A7;
   text-decoration: none;
   height: 100%;
 }
 header .navItem:hover {
-  text-decoration: underline overline #25BF6F;
+  text-decoration: underline overline #F1C619;
   font-size: 22px;
 }
 header .hamburger-button {
@@ -93,59 +93,65 @@ header .mobile-container li {
   transition: 0.3s linear;
   transform: translate(-150px, 0px);
 }
+.hero .hero-content h1 {
+  color: white;
+}
+.hero .hero-content h1:first-letter {
+  color: #F220A7;
+}
+.hero .hero-content h2 {
+  color: #F220A7;
+}
 .hero .hero-content:hover {
   opacity: 1;
   transform: translate(0px, 0px);
 }
-.hero h1, .hero h2 {
-  color: white;
-}
 
-.about {
-  background: #F2697F;
-}
 .about .about-me {
   height: 550px;
   width: 60%;
   position: relative;
   margin: 3% auto;
-  border: solid 2px black;
+  padding: 25px;
+  border: solid 1px black;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
 }
-.about .about-me .about-inner {
-  height: 96%;
-  width: 96%;
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  background: teal;
-  border: solid 2px black;
+.about .about-me h1 {
+  color: #F220A7;
+  text-align: center;
+}
+.about .about-me .intro:first-letter {
+  font-size: 200%;
+}
+.about .about-me .quote {
+  color: #F220A7;
 }
 .about .profile-pic {
   height: 400px;
   width: 400px;
-  background: teal;
+  background: #F220A7;
   margin: 4% auto;
-  border: solid 2px black;
 }
 .about img {
   width: 100%;
   height: 100%;
-  padding: 3%;
+  padding: 2%;
 }
 
 @media screen and (max-width: 900px) {
-  .main {
+  .about {
     flex-direction: column-reverse;
   }
-  .main .about {
+  .about .about-me {
     width: 70%;
   }
-  .main .profile-pic {
+  .about .profile-pic {
     width: 50%;
   }
 }
 @media screen and (max-width: 780px) {
-  .main .profile-pic {
+  .about .profile-pic {
     width: 50%;
     height: 250px;
   }
@@ -169,21 +175,71 @@ header .mobile-container li {
   transform-origin: top left;
 }
 
-.work-cards {
-  width: 80%;
+.cards-container {
+  width: 95%;
   margin: auto;
 }
-.work-cards .work1, .work-cards .work2, .work-cards .work3, .work-cards .work4 {
-  height: 400px;
-  width: 20%;
+.cards-container .work4, .cards-container .work3, .cards-container .work2, .cards-container .work1 {
+  height: 500px;
+  width: 22%;
   margin: 15px;
   border-radius: 20px;
-  background: #F2697F;
 }
-
+.cards-container .work4 .learn4, .work4 .cards-container .learn4, .cards-container .work3 .learn3, .work3 .cards-container .learn3, .cards-container .work2 .learn2, .work2 .cards-container .learn2, .cards-container .work1 .learn1 {
+  font-family: "Raleway", sans-serif;
+  height: 15%;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 0px 0px 20px 20px;
+  background: #F581BE;
+}
+.cards-container .work4 .description4, .work4 .cards-container .description4, .cards-container .work3 .description3, .work3 .cards-container .description3, .cards-container .work2 .description2, .work2 .cards-container .description2, .cards-container .work1 .description1 {
+  height: 40%;
+  text-align: center;
+  padding: 15px;
+  background: #4d524824;
+}
+.cards-container .work1 .pic1 {
+  height: 45%;
+  background: teal;
+  border-radius: 20px 20px 0px 0px;
+}
+.work2 .pic2 {
+  height: 45%;
+  background: teal;
+  border-radius: 20px 20px 0px 0px;
+}
+.work3 .pic3 {
+  height: 45%;
+  background: teal;
+  border-radius: 20px 20px 0px 0px;
+}
+.work4 .pic4 {
+  height: 45%;
+  background: teal;
+  border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 1050px) {
+  .cards-container .work1, .cards-container .work2, .cards-container .work3, .cards-container .work4 {
+    width: 40%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .cards-container .work1, .cards-container .work2, .cards-container .work3, .cards-container .work4 {
+    width: 80%;
+    height: 400px;
+  }
+}
 footer {
   height: 100px;
+  padding: 2%;
+  text-align: right;
   background: grey;
+}
+footer .social-icons {
+  width: 10%;
 }
 
 /*# sourceMappingURL=index.css.map */
